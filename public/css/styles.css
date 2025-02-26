@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body{
+    min-height: 100%;
+    background-color: #fff;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.user-picture{
+    display: inline-block;
+    margin: 10px 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid rgb(138, 138, 138);
+   
+}
+
+
+/* drop down navbar */
+
+/* .sub-menu-wrap{
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    width: 300px;
+    height: 500px;
+    background-color: #4070f4;
+} */
+
+
+/* .submenu{
+    background: #ff0000;
+    padding: 20px;
+    margin: 10px;
+} */
+
+/* .user-info{
+    display: flex;
+    align-items: center;
+} */
+
+/* .user-info h3{
+    font-weight: 500;
+} */
+
+
+
+nav .logo{
+    display: flex;
+    align-items: center;
+    margin: 0 24px;
+    width: 100%;
+}
+
+nav .logo .user-picture{
+    margin-left: auto;
+    /* align-content: flex-end; */
+}
+
+.logo .menu-icon{
+    color: #333;
+    font-size: 24px;
+    margin-right: 14px;
+    cursor: pointer;
+
+}
+
+.logo .logo-name{
+    color: #333;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+nav .sidebar{
+    position: fixed;
+    padding: 20px 0;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    width: 260px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+nav.open .sidebar{
+    left: 0;
+}
+
+
+
+.sidebar .sidebar-content{
+    padding: 30px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.sidebar-content .list{
+    list-style: none;
+}
+
+.list .nav-link{
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+    padding: 14px 12px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.nav-link:hover{
+    background-color: #4070f4;
+}
+
+.nav-link .icon{
+    margin-right: 14px;
+    font-size: 20px;
+    color: #707070;
+}
+
+.nav-link .link{
+    font-size: 16px;
+    color: #707070;
+    font-weight: 400;
+}
+
+.nav-link:hover .icon,
+.nav-link:hover .link{
+    color: #fff;
+}
+
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 1000vh;
+    width: 200%;
+    opacity: 0;
+    pointer-events: none;
+    background: rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    
+}
+
+nav.open ~ .overlay{
+    left: 260px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+/* content */
+
+.content{
+    position: static;
+    margin-top: 70px;
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+}
+
+nav.open ~ .content{
+    display: none;
+}
+
+
+
+/* tabel */
+table{
+    border: 1px solid black;
+    border-collapse: separate;
+    border-spacing: 0px;
+    min-width: max-content ;
+
+}
+
+th{
+    position: static;
+    top: 0px; 
+    background-color: darkcyan;
+    color: wheat;
+}
+
+.table-wrapper{
+    max-height: 100%;
+    overflow-y: scroll;
+    margin: 5px;
+}
+
+th, td{
+    border: 1px solid black;
+    padding: 4px;
+}
+
+.outer-wrapper{
+    border: 1px solid black;
+    box-shadow: 0px 0px 1px black;
+    margin: 20px;
+    max-width: fit-content;
+
+}
+
+h1{
+    margin-left: 20px;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* profillll */
+/* .profil{
+    display: flex; justify-content: flex-end;
+    display: block;
+    position: absolute;
+    width: 340px;
+    height: 500px;
+    background-color: #4070f4;
+    margin-left: auto; 
+    margin-right: 0;
+
+    padding-left: auto;
+    padding-right: 20px;
+} */
+
+
+/* button cetak */
+.button-cetak{
+    display: flex;
+    height: 40px;
+    align-content: flex-end;
+    padding-right: 20px;
+}
+
+.button-cetak button{
+    margin-left: auto;
+}
+
+
+/* .profil{
+    width: 320px;
+    height: 500px;
+    background-color: #ff0000;
+    position: ;
+    padding-top: 10px;
+} */

@@ -1,0 +1,7 @@
+Array
+(
+    [device] => 6289612804455
+    [status] => disconnect
+    [reason] => logged out from pairing
+    [timestamp] => 1729085572
+)
